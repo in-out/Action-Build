@@ -11,7 +11,7 @@ on:
         default: 'zhongfly'
       extension:
         required: true
-        default: 'copymangas'
+        default: 'copymanga'
 
 jobs:
   gradle:
