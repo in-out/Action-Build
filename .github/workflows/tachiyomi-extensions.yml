@@ -8,10 +8,10 @@ on:
         default: "zhongfly/tachiyomi-extensions"
       ref:
         required: true
-        default: 'zhongfly'
+        default: 'copymanga'
       extension:
         required: true
-        default: 'copymanga'
+        default: 'copymangas'
 
 jobs:
   gradle:
@@ -41,7 +41,6 @@ jobs:
           cd ./src/zh/
           rm -rf `ls -I ${{ github.event.inputs.extension }}`
           ls .
-
       - name: Build extensions
         uses: gradle/gradle-command-action@v2
         env:
